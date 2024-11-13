@@ -12,165 +12,359 @@
     #EDEDED - BACKGORUND
     #FFFFFF - SECONDARY TEXT (footer, promo, banner, card)*/
 
-    /* FONT FORMAT AND SIZE */
-    @font-face {
-        font-family: 'Roboto';
-        src: url(/assets/fonts/Roboto-Regular.ttf);
-    }
+/* FONT FORMAT AND SIZE */
+@font-face {
+  font-family: "Roboto";
+  src: url(/assets/fonts/Roboto-Regular.ttf);
+}
 
-    @font-face {
-        font-family: 'Roboto-SemiBold';
-        src: url(/assets/fonts/Roboto-Medium.ttf);
-    }
+@font-face {
+  font-family: "Roboto-SemiBold";
+  src: url(/assets/fonts/Roboto-Medium.ttf);
+}
 
-    @font-face {
-        font-family: 'Roboto-Bold';
-        src: url(/assets/fonts/Roboto-Bold.ttf);
-    }
+@font-face {
+  font-family: "Roboto-Bold";
+  src: url(/assets/fonts/Roboto-Bold.ttf);
+}
 
-    @font-face {
-        font-family: 'Roboto-Thin';
-        src: url(/assets/fonts/Roboto-Thin.ttf);
-    }
+@font-face {
+  font-family: "Roboto-Thin";
+  src: url(/assets/fonts/Roboto-Thin.ttf);
+}
 
-    body{
-        font-family: 'Roboto',Arial, Helvetica, sans-serif;
-        color: #292828;
-        background-color: #EDEDED;;
-    }
+body {
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
+  color: #292828;
+  background-color: #ededed;
+}
 
-    .container{
-        max-width: 1700px;
-    }
+.container {
+  max-width: 1700px;
+}
 
-    b{
-        font-family: 'Roboto-Bold';
-    }
+.container-fluid{
+    padding: 0px;
+    margin: 0px;
+}
 
-    h1{
-        font-family: 'Roboto-Bold';
-        font-size: 60px;
-    }
+b {
+  font-weight: 600;
+}
 
-    h2{
-        font-family: 'Roboto-SemiBold';
-        font-size: 36px;
-    }
+h1 {
+  font-family: "Roboto-Bold";
+  font-size: 60px;
+}
 
-    h3{
-        font-family: 'Roboto-Bold';
-        font-size: 40px;
-    }
+h2 {
+  font-family: "Roboto-SemiBold";
+  font-size: 36px;
+}
 
-    h4{
-        font-size: 48px;
-    }
+h3 {
+  font-family: "Roboto-Bold";
+  font-size: 40px;
+}
 
-    h5{
-        font-family: 'Roboto-SemiBold';
-        font-size: 20px;
-    }
+h4 {
+  font-size: 48px;
+}
 
-    .bodyText{
-        font-size: 24px;
-    }
+h5 {
+  font-family: "Roboto-SemiBold";
+  font-size: 20px;
+}
 
-    .bodyTextsm{
+.bodyText {
+  font-size: 24px;
+}
 
-        font-size: 20px;
-    }
+.bodyTextsm {
+  font-size: 20px;
+}
 
-    .bodyTextxs{
-        font-size: 18px;
-    }
+.bodyTextxs {
+  font-size: 18px;
+}
 
-    /* IMAGE FORMAT */
+/* IMAGE FORMAT */
 
-    .sellerCardimgs{
-        width: 379px;
-        height: 402px;
-        border-radius: 30px;
-    }
+.sellerCardimgs {
+  width: 100%;
+  height: 350px;
+  border-radius: 10px;
+}
 
-    .lrgCardimgs{
-        border-radius: 10px;
-        padding: 24px 24px 24px 0px;
-        width: 100%;
-        height: 534px;
-        object-fit: cover;
-    }
+.lrgCardimgs {
+  border-radius: 10px;
+  padding: 24px 24px 24px 0px;
+  width: 100%;
+  height: 534px;
+  object-fit: cover;
+}
 
-    .cookingCardimgs{
-        height: 402px;
-        width: 100%;
-        padding: 24px 24px 24px 0px;
-        border-radius: 30px;
-    }
+.cookingCardimgs {
+  height: 402px;
+  width: 100%;
+  padding: 24px 24px 24px 0px;
+  border-radius: 30px;
+}
 
-    .underlayimgs{
-        width: 531px;
-        height: 664.751px;
-    }
+.underlayimgs {
+  width: 531px;
+  height: 664.751px;
+}
 
-    /* CARD TEXT AND OVERLAY FORMAT */
+/* CARD TEXT AND OVERLAY FORMAT */
 
-    .overlay-bg{
-        border-radius: 10px;
-        background-color: rgb(18,18,18,0.60);
-        height: 345px;
-        padding: 73px 28px;
-        color: white;
-    }
+.overlay-bg {
+  border-radius: 10px;
+  background-color: rgb(18, 18, 18, 0.6);
+  height: 345px;
+  padding: 73px 28px;
+  color: white;
+}
 
-    /* NAVBAR */
-    .nav-text{
-        color: #353535;
-    }
+/* NAVBAR */
+.nav-text {
+  color: #353535;
+}
 
-    .sale-text{
-        color: #982A1C;
-    }
+.sale-text {
+  color: #982a1c;
+}
 
-    .nav-text:hover{
-        color: #B73A2A;
-        text-decoration: underline;
-    }
+.nav-text:hover {
+  color: #b73a2a;
+  text-decoration: underline;
+}
 
-    .logo-format{
-        background-color: #cf5e4f;
-        padding: .5rem 1rem;
-        border-radius: 10px;
-    }
+.logo-format {
+  background-color: #cf5e4f;
+  padding: 0.5rem 1rem;
+  border-radius: 10px;
+}
 
-    #cookware:hover + #bakeware{
-        font-family: 'Roboto-Bold';
-    }
+#cookware:hover + #bakeware {
+  font-family: "Roboto-Bold";
+}
 
-    #bakewear:hover ~ #cookware{
-        font-family: 'Roboto-Bold';
-    }
+#bakewear:hover ~ #cookware {
+  font-family: "Roboto-Bold";
+}
 
-    /* body:has(#bakewear:hover) #cookware{
+/* body:has(#bakewear:hover) #cookware{
         font-family: 'Roboto-Bold';
         font-weight: 900;
     } */
 
-    /* HERO IMAGE */
-    .heroImg{
-        width: 100%;
-    }
+/* HERO IMAGE */
+.heroImg {
+  width: 100%;
+}
 
-    .hero-overlay{
-        color: white;
-        position: absolute;
-        top: 1000px;
-        left: 6%;
-        background-color: rgba(18, 18, 18, 0.685);
-        padding: 1.5rem;
-        font-size: 36px;
-    }
+.hero-overlay {
+  color: white;
+  position: absolute;
+  top: 1000px;
+  left: 6%;
+  background-color: rgba(18, 18, 18, 0.685);
+  padding: 1.5rem;
+  font-size: 36px;
+}
 
-    .flexbox-format{
-        margin-top: 8rem;
-        margin-bottom: 1rem;
-    }
+.flexbox-format {
+  margin-top: 8rem;
+  margin-bottom: 1rem;
+}
+
+/* color cirles */
+.circle-red {
+  height: 25px;
+  width: 25px;
+  margin: 10px;
+  border-radius: 50%;
+  border: 1px solid black;
+  background-color: #ea2d2c;
+  margin: 5px;
+  margin-top: 0px;
+}
+
+#circle-border {
+  border-collapse: separate;
+  border-spacing: 15px;
+}
+
+.circle-orange {
+  height: 25px;
+  width: 25px;
+  margin: 10px;
+  border-radius: 50%;
+  background-color: #fb5108;
+  margin: 5px;
+  margin-top: 0px;
+}
+
+.circle-yellow {
+  height: 25px;
+  width: 25px;
+  margin: 10px;
+  border-radius: 50%;
+  background-color: #d29d12;
+  margin: 5px;
+  margin-top: 0px;
+}
+
+.circle-grey {
+  height: 25px;
+  width: 25px;
+  margin: 10px;
+  border-radius: 50%;
+  background-color: #292828;
+  margin: 5px;
+  margin-top: 0px;
+}
+
+/* GRID SECTION */
+
+.grid-section {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto 1fr auto 1fr auto;
+  gap: 30px;
+}
+
+/* BEST SELLERS */
+
+.gridTitle1 {
+  grid-column: 1/4;
+  grid-row: 1;
+}
+
+.gridTitle2 {
+  grid-column: 1/4;
+  grid-row: 3;
+}
+
+.sellerCard-pot1 {
+  grid-column: 1 / 2;
+  grid-row: 2;
+  padding: 2rem;
+  border: 2px solid black;
+  border-radius: 10px;
+  height: 85%;
+  margin: 20px;
+}
+
+.sellerCard-pot2 {
+  grid-column: 2/3;
+  grid-row: 2;
+  padding: 2rem;
+  border: 2px solid black;
+  border-radius: 10px;
+  margin: 20px;
+}
+
+.sellerCard-pan {
+  grid-column: 3 / 4;
+  grid-row: 2;
+  padding: 2rem;
+  border: 2px solid black;
+  border-radius: 10px;
+  margin: 20px;
+}
+
+.sellerBTN {
+  background-color: transparent;
+  border: 1px solid black;
+  padding: 0.5rem 2rem;
+}
+
+.sellerBTN:hover {
+  background-color: #292828;
+  color: white;
+}
+
+/* REVIEWS */
+.wokstar {
+  grid-column: 1/2;
+  grid-row: 4;
+}
+
+.built-to-last {
+  grid-column: 2/3;
+  grid-row: 4;
+}
+
+.best-cookware {
+  grid-column: 3/4;
+  grid-row: 4;
+}
+
+.wokstar-text {
+  grid-column: 1/2;
+  grid-row: 4;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+  margin: 0rem 3.5rem;
+}
+
+.built-to-last-text {
+  grid-column: 2/3;
+  grid-row: 4;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+  margin: 0rem 3.5rem;
+}
+
+.best-cookware-text {
+  grid-column: 3/4;
+  grid-row: 4;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+  margin: 0rem 3.5rem;
+}
+
+.reviewsImgs {
+  width: 100%;
+  height: 745px;
+  object-fit: cover;
+}
+
+/* FOOTER */
+footer{
+    grid-row: 5;
+    background-color: #1E2C30;
+    padding-top: 6rem;
+}
+
+.footer-format{
+    display: flex;
+    justify-content: space-between;
+}
+
+.footerBTN{
+    color: white;
+    background-color: transparent;
+  border: 1px solid white;
+  padding: .5rem 1rem;
+  width: 100%;
+}
+
+footer .col-4{
+    padding: 0px;
+}
+
+#aboutus:hover{
+    color: #4cb976;
+}
