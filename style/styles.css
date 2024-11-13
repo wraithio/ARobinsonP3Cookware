@@ -1,0 +1,176 @@
+/* #1E2C30 - FOOTER BACKGROUND/PROMO BAR 
+    #000000 - STROKE FOR CARD
+    #292828 - TEXT
+    #982A1C - ACTIVE HOVER COLOR NAV "SALE"
+    #B73A2A - ACCENT TEXT
+    #EA2D2C - COLOR OPTION FOR CARD
+    #FB5108 - COLOR OPTION FOR CARD
+    #D29D12 - COLOR OPTION FOR CARD
+    #353535 - COLOR SELECTOR FOR CARD
+    #353535 - NAV BAR TEXT
+    #353535 lesser opacity - NAV BAR HOVER
+    #EDEDED - BACKGORUND
+    #FFFFFF - SECONDARY TEXT (footer, promo, banner, card)*/
+
+    /* FONT FORMAT AND SIZE */
+    @font-face {
+        font-family: 'Roboto';
+        src: url(/assets/fonts/Roboto-Regular.ttf);
+    }
+
+    @font-face {
+        font-family: 'Roboto-SemiBold';
+        src: url(/assets/fonts/Roboto-Medium.ttf);
+    }
+
+    @font-face {
+        font-family: 'Roboto-Bold';
+        src: url(/assets/fonts/Roboto-Bold.ttf);
+    }
+
+    @font-face {
+        font-family: 'Roboto-Thin';
+        src: url(/assets/fonts/Roboto-Thin.ttf);
+    }
+
+    body{
+        font-family: 'Roboto',Arial, Helvetica, sans-serif;
+        color: #292828;
+        background-color: #EDEDED;;
+    }
+
+    .container{
+        max-width: 1700px;
+    }
+
+    b{
+        font-family: 'Roboto-Bold';
+    }
+
+    h1{
+        font-family: 'Roboto-Bold';
+        font-size: 60px;
+    }
+
+    h2{
+        font-family: 'Roboto-SemiBold';
+        font-size: 36px;
+    }
+
+    h3{
+        font-family: 'Roboto-Bold';
+        font-size: 40px;
+    }
+
+    h4{
+        font-size: 48px;
+    }
+
+    h5{
+        font-family: 'Roboto-SemiBold';
+        font-size: 20px;
+    }
+
+    .bodyText{
+        font-size: 24px;
+    }
+
+    .bodyTextsm{
+
+        font-size: 20px;
+    }
+
+    .bodyTextxs{
+        font-size: 18px;
+    }
+
+    /* IMAGE FORMAT */
+
+    .sellerCardimgs{
+        width: 379px;
+        height: 402px;
+        border-radius: 30px;
+    }
+
+    .lrgCardimgs{
+        border-radius: 10px;
+        padding: 24px 24px 24px 0px;
+        width: 100%;
+        height: 534px;
+        object-fit: cover;
+    }
+
+    .cookingCardimgs{
+        height: 402px;
+        width: 100%;
+        padding: 24px 24px 24px 0px;
+        border-radius: 30px;
+    }
+
+    .underlayimgs{
+        width: 531px;
+        height: 664.751px;
+    }
+
+    /* CARD TEXT AND OVERLAY FORMAT */
+
+    .overlay-bg{
+        border-radius: 10px;
+        background-color: rgb(18,18,18,0.60);
+        height: 345px;
+        padding: 73px 28px;
+        color: white;
+    }
+
+    /* NAVBAR */
+    .nav-text{
+        color: #353535;
+    }
+
+    .sale-text{
+        color: #982A1C;
+    }
+
+    .nav-text:hover{
+        color: #B73A2A;
+        text-decoration: underline;
+    }
+
+    .logo-format{
+        background-color: #cf5e4f;
+        padding: .5rem 1rem;
+        border-radius: 10px;
+    }
+
+    #cookware:hover + #bakeware{
+        font-family: 'Roboto-Bold';
+    }
+
+    #bakewear:hover ~ #cookware{
+        font-family: 'Roboto-Bold';
+    }
+
+    /* body:has(#bakewear:hover) #cookware{
+        font-family: 'Roboto-Bold';
+        font-weight: 900;
+    } */
+
+    /* HERO IMAGE */
+    .heroImg{
+        width: 100%;
+    }
+
+    .hero-overlay{
+        color: white;
+        position: absolute;
+        top: 1000px;
+        left: 6%;
+        background-color: rgba(18, 18, 18, 0.685);
+        padding: 1.5rem;
+        font-size: 36px;
+    }
+
+    .flexbox-format{
+        margin-top: 8rem;
+        margin-bottom: 1rem;
+    }
