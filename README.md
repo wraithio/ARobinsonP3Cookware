@@ -10,5 +10,11 @@
 **Github**: https://github.com/wraithio/ARobinsonP3Cookware
 
 ### Peer Review:
-**Name**: 
-**Comments**:
+**Name**: Gianpaolo Reinares
+**Comments**: The Site Looks Great; Responsiveness Works for all sizes;
+> Footer and Promo are the wrong color; Should be #1E2C20
+> In 'New Arrivals' could use a bit of margin between the entries;
+> In the Footer, it could use a bit of margin on dektop mode as it is a bit cramped
+> Don't know if you have enough time, but try looking into the 'Offcanvas' section of 'Navbar' in getbootstrap.com
+> Also, check out 'overflow: hidden' for pictures that zoom in.
+> Overall everything looks good, site is responsive, I like how the best sellers arrange themselves within certain breakpoints. Great work!
