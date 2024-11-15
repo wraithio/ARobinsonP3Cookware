@@ -472,7 +472,7 @@ i {
   .wokstar-text {
     grid-row: 6;
     grid-column: 1/4;
-    margin: 0rem 20rem;
+    margin: 0rem 10rem;
   }
 
   .built-to-last {
@@ -483,7 +483,7 @@ i {
   .built-to-last-text {
     grid-row: 7;
     grid-column: 1/4;
-    margin: 0rem 2rem;
+    margin: 0rem 10rem;
   }
 
   .best-cookware {
@@ -494,7 +494,7 @@ i {
   .best-cookware-text {
     grid-row: 8;
     grid-column: 1/4;
-    margin: 0rem 25rem;
+    margin: 0rem 10rem;
   }
 }
 
@@ -536,6 +536,13 @@ i {
   .arrivalBreakpoint {
     flex: 0 0 auto;
     width: 50%;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .tinyBreakpoint{
+    flex: 0 0 auto;
+    width: 100%;
   }
 }
 
@@ -608,6 +615,7 @@ i {
   }
   .sellerCard-pot1{
     margin: 0px;
+    height: 775px !important;
   }
 
   .sellerCard-pot2{
