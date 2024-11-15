@@ -89,6 +89,10 @@ h5 {
   font-size: 18px;
 }
 
+.cookingBreakpoint h3{
+  padding: 2rem 0rem;
+}
+
 /* IMAGE FORMAT */
 
 .sellerCardimgs {
@@ -385,12 +389,17 @@ nav {
   overflow: hidden;
 }
 
+.zoomtransform{
+  height: fit-content;
+  overflow: hidden;
+}
+
 #zoom{
   transition: transform .2s ease;
   transform-origin: 50% 50%;
 }
 #zoom:hover{
-  transform: scale(1.02);
+  transform: scale(1.1);
 }
 
 #darken:hover{
@@ -400,10 +409,10 @@ nav {
 /* FOOTER */
 footer {
   grid-row: 5;
-  background-color: #1e2c30;
+  background-color: #1E2C20;
   margin-top: 4rem;
-  padding-top: 6rem;
-  padding-bottom: 6rem;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
 }
 
 .footer-format {
@@ -551,6 +560,9 @@ i {
     max-width: 720px;
   }
 
+  .lrgCardimgs {
+    margin-top: 2.5rem;
+  }
 }
 
 /* MOBILE RESPONSIVENESS */
