@@ -11,14 +11,18 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="./style/styles.css" />
+    <script
+      src="https://kit.fontawesome.com/873685b891.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <!-- START OF BOOTSTRAP -->
     <!-- NAVBAR -->
     <header>
       <nav class="navbar navbar-expand-lg">
-        <div class="container-fluid mb-3">
-          <a class="navbar-brand" style="margin-left: 7%" href="/index.html"
+        <div class="container-fluid">
+          <a class="navbar-brand d-none d-lg-block"
             ><img
               src="/assets/Icons/Pot.png"
               class="logo-format"
@@ -26,7 +30,6 @@
           /></a>
           <button
             class="navbar-toggler btnColor"
-            style="margin-right: 7%"
             type="button"
             data-bs-toggle="collapse"
             data-bs-target="#navbarSupportedContent"
@@ -36,40 +39,39 @@
           >
             <span class="navbar-toggler-icon"></span>
           </button>
-          <div
-            class="collapse navbar-collapse justify-content-center"
+          <a class="navbar-brand"
+            ><img
+              src="/assets/Icons/Pot.png"
+              class="logo-format d-md-block d-lg-none"
+              alt="Pot Logo"
+          /></a>
+
+          <ul
             id="navbarSupportedContent"
-            style="margin-right: 5%"
+            class="navbar-nav collapse navbar-collapse"
           >
-            <ul class="navbar-nav">
-              <div class="container">
-                <li class="nav-item">
-                  <a class="nav-link nav-text" href="*">COOKWARE</a>
-                </li>
-              </div>
-              <div class="container">
-                <li class="nav-item">
-                  <a class="nav-link nav-text" href="*">BAKEWARE</a>
-                </li>
-              </div>
-              <div class="container">
-                <li class="nav-item">
-                  <a class="nav-link nav-text" href="*">ACCESSORIES</a>
-                </li>
-              </div>
-              <div class="container">
-                <li class="nav-item">
-                  <a class="nav-link sale-text" href="*">SALE</a>
-                </li>
-              </div>
-            </ul>
-          </div>
+            <li class="nav-item" id="cookware">
+              <a class="nav-link nav-text" href="*">COOKWARE</a>
+            </li>
+
+            <li class="nav-item" id="bakeware">
+              <a class="nav-link nav-text" href="*">BAKEWARE</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link nav-text" href="*">ACCESSORIES</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link sale-text" href="*">SALE</a>
+            </li>
+          </ul>
         </div>
       </nav>
     </header>
     <!-- HERO IMAGE -->
 
-    <div>
+    <div class="hero-grid">
       <img class="heroImg" src="./assets/hero.jpg" alt="lady cooking" />
       <div class="hero-overlay">
         <h4>Cookware Built to Last</h4>
@@ -89,32 +91,36 @@
         <h1>Start Cooking</h1>
       </div>
       <div class="row">
-        <div class="col-3">
+        <div class="cookingBreakpoint col-3">
           <img
+            id="zoom"
             class="cookingCardimgs"
             src="./assets/StartCooking1.jpeg"
             alt="cast iron pot"
           />
           <h3>Cast Iron Pot</h3>
         </div>
-        <div class="col-3">
+        <div class="cookingBreakpoint col-3">
           <img
+            id="zoom"
             class="cookingCardimgs"
             src="./assets/StartCooking2.jpeg"
             alt="stock pot"
           />
           <h3>Stock Pot</h3>
         </div>
-        <div class="col-3">
+        <div class="cookingBreakpoint col-3">
           <img
+            id="zoom"
             class="cookingCardimgs"
             src="./assets/StartCooking3.jpeg"
             alt="sauce pan"
           />
           <h3>Sauce Pan</h3>
         </div>
-        <div class="col-3">
+        <div class="cookingBreakpoint col-3">
           <img
+            id="zoom"
             class="cookingCardimgs"
             src="./assets/StartCooking4.jpeg"
             alt="cooking utensils"
@@ -126,8 +132,9 @@
         <h1>New Arrivals</h1>
       </div>
       <div class="row">
-        <div class="col-6">
+        <div class="arrivalBreakpoint">
           <img
+            id="darken"
             class="lrgCardimgs"
             src="./assets/NewArrivals1.jpg"
             alt="pot in oven"
@@ -139,14 +146,17 @@
           </p>
           <p class="bodyTextxs">Color: <b> Apple Cinnamon</b></p>
           <div style="display: flex">
-            <div class="circle-red" id="border-circle"></div>
+            <div class="circle-red">
+              <div class="circle-border"></div>
+            </div>
             <div class="circle-orange"></div>
             <div class="circle-yellow"></div>
             <div class="circle-grey"></div>
           </div>
         </div>
-        <div class="col-6">
+        <div class="arrivalBreakpoint">
           <img
+            id="darken"
             class="lrgCardimgs"
             src="./assets/NewArrivals2.jpg"
             alt="food in a wok"
@@ -167,6 +177,7 @@
 
       <div class="sellerCard-pot1">
         <img
+          id="zoom"
           class="sellerCardimgs"
           src="./assets/BestSeller1.jpg"
           alt="blue pot"
@@ -180,6 +191,7 @@
       </div>
       <div class="sellerCard-pot2">
         <img
+          id="zoom"
           class="sellerCardimgs"
           src="./assets/BestSeller2.jpg"
           alt="red pot"
@@ -198,6 +210,7 @@
       </div>
       <div class="sellerCard-pan">
         <img
+          id="zoom"
           class="sellerCardimgs"
           src="./assets/BestSeller3.jpg"
           alt="sauce pan"
@@ -209,7 +222,7 @@
           heat distribution for better and faster cooking. No matter what you're
           cooking, you can count on the Sauce Pan to help you cook like a pro.
         </p>
-        <button class="sellerBTN" id="panBTN">SHOP NOW</button>
+        <div id="panBTN"><button class="sellerBTN">SHOP NOW</button></div>
       </div>
       <h1 class="gridTitle2" style="text-align: center">Reviews</h1>
       <div class="wokstar">
@@ -249,6 +262,7 @@
       <div class="best-cookware">
         <img
           class="reviewsImgs"
+          id="cook-mobile"
           src="./assets/Reviews3.jpg"
           alt="professional chef in kitchen"
         />
@@ -265,13 +279,13 @@
     </div>
     <!-- END OF GRID -->
     <!--FOOTER -->
-    <footer>
+    <footer class="d-none d-md-block">
       <div class="container-fluid text-white">
         <div class="container">
           <div class="row">
             <div class="col-2">
               <p class="bodyText"><b>ABOUT OUR HOME</b></p>
-              <p class="bodyTextxs" id="aboutus">ABOUT</p>
+              <p class="bodyTextxs" id="aboutus">ABOUT US</p>
               <p class="bodyTextxs">CAREERS</p>
               <p class="bodyTextxs">PRIVACY</p>
               <p class="bodyTextxs">MEDIA RELATIONS</p>
@@ -300,9 +314,10 @@
                   </p>
                 </div>
                 <div class="row">
-                  <div class="col-8">
+                  <div class="col-xxl-8">
                     <div class="input-group mb-3">
                       <input
+                        style="border-radius: 0px"
                         type="text"
                         class="form-control"
                         id="floatingInputGroup1"
@@ -310,16 +325,90 @@
                       />
                     </div>
                   </div>
-                  <div class="col-4">
+                  <div class="col-xxl-4">
                     <button class="footerBTN">
                       <p class="bodyTextxs m-0">SUBSCRIBE</p>
                     </button>
                   </div>
                 </div>
-                <div class="row">
-                  <img src=""
+                <div class="row mt-3">
+                  <div
+                    class="col-6 d-flex"
+                    style="justify-content: space-between"
+                  >
+                    <i class="fa-brands fa-facebook-f fa-2xl"></i>
+                    <i class="fa-brands fa-twitter fa-2xl"></i>
+                    <i class="fa-brands fa-instagram fa-2xl"></i>
+                    <i class="fa-brands fa-linkedin-in fa-2xl"></i>
+                  </div>
                 </div>
               </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- FOOTER MOBILE -->
+    <footer class="d-block d-md-none">
+      <div class="container-fluid text-white">
+        <div class="container">
+          <div class="row">
+            <p class="bodyTextxs">
+              Subscribe to our newsletter to be the first to know about new
+              products and special events
+            </p>
+          </div>
+          <div class="row">
+            <div class="col-6">
+              <div class="input-group mb-3">
+                <input
+                  style="border-radius: 0px"
+                  type="text"
+                  class="form-control"
+                  id="floatingInputGroup1"
+                  placeholder="Enter email address"
+                />
+              </div>
+            </div>
+            <div class="col-6">
+              <button class="footerBTN">
+                <p class="bodyTextxs m-0">SUBSCRIBE</p>
+              </button>
+            </div>
+          </div>
+          <div class="row mt-3 mb-4">
+            <div class="col-6 d-flex" style="justify-content: space-between">
+              <i class="fa-brands fa-facebook-f fa-2xl"></i>
+              <i class="fa-brands fa-twitter fa-2xl"></i>
+              <i class="fa-brands fa-instagram fa-2xl"></i>
+              <i class="fa-brands fa-linkedin-in fa-2xl"></i>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-8">
+              <p class="bodyText"><b>ABOUT OUR HOME</b></p>
+              <p class="bodyTextxs" id="aboutus">ABOUT US</p>
+              <p class="bodyTextxs">CAREERS</p>
+              <p class="bodyTextxs">PRIVACY</p>
+              <p class="bodyTextxs">MEDIA RELATIONS</p>
+            </div>
+            <div class="col-4">
+              <p class="bodyText"><b>PRODUCTS</b></p>
+              <p class="bodyTextxs">COOKWARE</p>
+              <p class="bodyTextxs">BAKEWARE</p>
+              <p class="bodyTextxs">BEST SELLERS</p>
+              <p class="bodyTextxs">ACCESSORIES</p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-6" id="customer-mobile">
+              <p class="bodyText"><b>CUSTOMER SERVICE</b></p>
+              <p class="bodyTextxs">CONTACT US</p>
+              <p class="bodyTextxs">ORDER STATUS</p>
+              <p class="bodyTextxs">RETURNS AND EXCHANGES</p>
+              <p class="bodyTextxs">FAQS</p>
             </div>
           </div>
         </div>
